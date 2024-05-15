@@ -1,0 +1,598 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/styles/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(/styles/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.conteiner {
+  width: 65%;
+  margin: 0 auto;
+}
+.conteiner .boxing {
+  margin-top: 95px;
+}
+@media screen and (max-width: 768px) {
+  .conteiner .boxing {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .conteiner {
+    width: 98%;
+  }
+}
+header {
+  height: 700px;
+  background-image: url(./image/Background.png);
+  background-size: cover;
+}
+header .d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+header .wrape {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .wrape .header-logo,
+header .wrape .header-menu {
+  margin-top: 46px;
+  padding-right: 10px;
+}
+header .wrape .logo {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  header .wrape .logo {
+    margin-left: 66px;
+  }
+}
+header .wrape .menu-link {
+  width: 90px;
+  height: 36px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+header .wrape .link {
+  border: 2px solid white;
+  border-radius: 18px;
+}
+header .justify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 153px;
+}
+header .justify .text {
+  width: 470px;
+  height: 126px;
+  margin-bottom: 28px;
+}
+header .justify .text h1 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+@media screen and (max-width: 768px) {
+  header .justify .text h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .justify .text {
+    width: 272px;
+    height: 74px;
+    margin-bottom: 5px;
+  }
+}
+header .justify p {
+  height: 24px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Roboto";
+  color: rgb(247, 243, 242);
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header .justify p {
+    width: 280px;
+    height: 49px;
+    font-size: 18px;
+  }
+}
+header .justify nav {
+  width: 225px;
+  height: 40px;
+  background-color: rgb(255, 78, 80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 33px;
+}
+header .justify nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+@media screen and (max-width: 768px) {
+  header .justify {
+    margin-top: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 540px;
+  }
+}
+main .how {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  margin: 35px auto;
+}
+@media screen and (max-width: 1200px) {
+  main .how {
+    flex-wrap: wrap;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .how {
+    margin: 15px auto;
+    font-size: 22px;
+  }
+}
+main .d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .d-flex .box {
+  width: 30%;
+  height: 400px;
+  background-image: url(./image/Step\ 3.png);
+  background-size: cover;
+}
+main .d-flex .box .step {
+  margin: 220px 25px 20px;
+}
+main .d-flex .box .step nav {
+  width: 70px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 78, 80);
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+main .d-flex .box .step nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+main .d-flex .box .step h4 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  margin-bottom: 20px;
+}
+main .d-flex .box .step p {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Roboto";
+  color: rgb(227, 227, 227);
+}
+@media screen and (max-width: 1200px) {
+  main .d-flex .box .step {
+    margin: 205px 20px 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .d-flex .box .step {
+    margin: 65px 20px 16px;
+  }
+}
+main .d-flex .box:nth-child(2) {
+  background-image: url(./image/Step\ 2.png);
+}
+main .d-flex .box:nth-child(3) {
+  background-image: url(./image/Step\ 1\ image.png);
+}
+@media screen and (max-width: 768px) {
+  main .d-flex .box {
+    height: 240px;
+    margin: 10px auto;
+    width: 97%;
+  }
+}
+main .meeting {
+  display: flex;
+}
+main .meeting .meet {
+  width: 25%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .meeting .meet img {
+  border-radius: 50%;
+}
+main .meeting .meet .music {
+  border-radius: 50%;
+  position: relative;
+}
+main .meeting .meet .music::after {
+  content: "";
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 85px;
+  bottom: 7px;
+}
+main .meeting .meet .note::after {
+  background-color: rgb(255, 78, 80);
+  background-image: url(./image/music2.svg);
+}
+main .meeting .meet .pensil::after {
+  background-color: rgb(25, 212, 202);
+  background-image: url(./image/brush.svg);
+}
+main .meeting .meet .camera::after {
+  background-color: rgb(255, 167, 16);
+  background-image: url(./image/camera.svg);
+}
+main .meeting .meet .fly::after {
+  background-color: rgb(102, 125, 243);
+  background-image: url(./image/Shape.svg);
+}
+main .meeting .meet h3 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  margin: 17px auto;
+}
+main .meeting .meet p {
+  width: 90%;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Roboto";
+  color: rgb(102, 102, 102);
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  main .meeting .meet {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .meeting .meet {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .meeting {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
+main .other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .other nav {
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255, 78, 80);
+  border-radius: 20px;
+  margin-top: 36px;
+}
+main .other nav a {
+  color: rgb(255, 78, 80);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+@media screen and (max-width: 768px) {
+  main .other nav {
+    width: 279px;
+    height: 39px;
+  }
+}
+main .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 310px 310px 310px;
+  gap: 10px;
+}
+main .grid-image {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url(./image/Sport.png);
+  background-size: cover;
+}
+main .grid-image:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url(./image/Healath.png);
+}
+main .grid-image:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-image: url(./image/Extreme.png);
+}
+main .grid-image:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(./image/Games.png);
+}
+main .grid-image:nth-child(5) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-image: url(./image/Culture.png);
+  background-size: cover;
+}
+main .grid-image:nth-child(6) {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background-image: url(./image/Culture\ Copy\ \(1\).png);
+}
+main .grid-image:nth-child(7) {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background-image: url(./image/Games\ Copy.png);
+}
+@media screen and (max-width: 768px) {
+  main .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  main .grid-image {
+    width: 95%;
+    height: 120px;
+    margin: 5px auto;
+    display: flex;
+    background-image: url(./image/Sport.png);
+    background-size: cover;
+    background-position: center;
+  }
+  main .grid-image:nth-child(2) {
+    background-image: url(./image/Healath.png);
+  }
+  main .grid-image:nth-child(3) {
+    background-image: url(./image/Extreme.png);
+  }
+  main .grid-image:nth-child(4) {
+    background-image: url(./image/Games.png);
+  }
+  main .grid-image:nth-child(5) {
+    background-image: url(./image/Culture.png);
+  }
+  main .grid-image:nth-child(6) {
+    background-image: url(./image/Culture\ Copy\ \(1\).png);
+  }
+  main .grid-image:nth-child(7) {
+    background-image: url(./image/Games\ Copy.png);
+  }
+}
+main .crate {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+main .crate div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+main .crate div p {
+  width: 90%;
+  height: 24px;
+  color: rgb(102, 102, 102);
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+}
+main .crate .place {
+  justify-content: space-between;
+}
+main .crate .place input {
+  width: 57%;
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  main .crate .place input {
+    width: 85%;
+  }
+}
+main .crate .place nav {
+  width: 40%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 78, 80);
+  border-radius: 20px;
+}
+main .crate .place nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  main .crate .place nav {
+    width: 85%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .crate .place {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .crate {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .crate {
+    width: 95%;
+  }
+}
+
+.footing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 95px;
+  border-top: 2px solid rgb(255, 78, 80);
+}
+.footing .foot {
+  width: 25%;
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footing .foot h2 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  color: rgb(255, 78, 80);
+}
+.footing .foot h5 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: rgb(68, 68, 68);
+}
+.footing .foot nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footing .foot nav a {
+  width: 100%;
+  margin: 5px auto;
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+@media screen and (max-width: 768px) {
+  .footing .foot nav {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footing .foot {
+    width: 95%;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */

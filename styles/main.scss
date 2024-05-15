@@ -1,0 +1,668 @@
+@import './bases/bases';
+@import './bases/mixins';
+@import './bases/variables';
+@import './bases/fonts';
+
+
+
+.conteiner {
+    width: 65%;
+    margin: 0 auto;
+
+.boxing {
+    margin-top: 95px;
+}
+
+@media screen and (max-width: 768px) {
+    .boxing {
+        margin-top: 25px;
+    }
+
+}
+}
+
+@media screen and (max-width: 1200px) {
+    .conteiner {
+        width: 98%;
+    }
+
+}
+
+header {
+    height: 700px;
+
+    background: {
+        image: url(./image/Background.png);
+        size: cover;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .wrape {
+        display: flex;
+        flex-wrap: wrap;
+
+        .header-logo,
+        .header-menu {
+            margin-top: 46px;
+            padding-right: 10px;
+
+        }
+
+        .logo {
+            @include font (20px, 700, 'Montserrat');
+            color: white;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo {
+                margin-left: 66px;
+            }
+        }
+
+
+        .menu-link {
+            @include box (90px, 36px, white);
+            @include font (14px, 400, 'Montserrat');
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 15px;
+        }
+
+        .link {
+            border: 2px solid white;
+            border-radius: 18px;
+        }
+    }
+
+
+
+    .justify {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 153px;
+
+        .text {
+            width: 470px;
+            height: 126px;
+            margin-bottom: 28px;
+
+            h1 {
+                text-align: center;
+                @include font (52px, 700, 'Montserrat');
+            }
+
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 30px;
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .text {
+                width: 272px;
+                height: 74px;
+                margin-bottom: 5px;
+            }
+
+        }
+
+        p {
+            height: 24px;
+            @include font (24px, 300, 'Roboto');
+            color: rgb(247, 243, 242);
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            p {
+                width: 280px;
+                height: 49px;
+                font-size: 18px;
+            }
+
+        }
+
+        nav {
+            width: 225px;
+            height: 40px;
+            background-color: rgb(255, 78, 80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin-top: 33px;
+
+
+            a {
+                color: white;
+                text-decoration: none;
+                @include font (14px, 700, 'Montserrat');
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .justify {
+            margin-top: 26px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 540px;
+    }
+
+}
+
+main {
+    .how {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font (26px, 700, 'Montserrat');
+        text-align: center;
+        margin: 35px auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .how {
+            flex-wrap: wrap;
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .how {
+            margin: 15px auto;
+            font-size: 22px;
+        }
+    }
+
+    .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        .box {
+            width: 30%;
+            height: 400px;
+
+            background: {
+                image: url(./image/Step\ 3.png);
+                size: cover;
+            }
+
+
+            .step {
+                margin: 220px 25px 20px;
+
+                nav {
+                    width: 70px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgb(255, 78, 80);
+                    border-radius: 20px;
+                    margin-bottom: 18px;
+
+                    a {
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        @include font (10px, 400, 'Montserrat');
+                    }
+                }
+
+                h4 {
+                    color: rgb(255, 255, 255);
+                    @include font (24px, 700, 'Montserrat');
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    @include font (14px, 300, 'Roboto');
+                    color: rgb(227, 227, 227);
+
+                }
+            }
+
+
+            @media screen and (max-width: 1200px) {
+                .step {
+                    margin: 205px 20px 16px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .step {
+                    margin: 65px 20px 16px;
+                }
+            }
+        }
+
+        .box:nth-child(2) {
+            background-image: url(./image/Step\ 2.png);
+        }
+
+        .box:nth-child(3) {
+            background-image: url(./image/Step\ 1\ image.png);
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                height: 240px;
+                margin: 10px auto;
+                width: 97%;
+            }
+        }
+    }
+
+    .meeting {
+        display: flex;
+
+        .meet {
+            width: 25%;
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+            }
+
+
+            .music {
+                border-radius: 50%;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    height: 36px;
+                    width: 36px;
+                    border-radius: 50%;
+                    border: 4px solid white;
+
+                    background: {
+                        repeat: no-repeat;
+                        position: center;
+                    }
+
+                    overflow: hidden;
+                    display: block;
+                    position: absolute;
+                    left: 85px;
+                    bottom: 7px;
+
+                }
+
+            }
+
+            .note::after {
+                background: {
+                    color: rgb(255, 78, 80);
+                    image: url(./image/music2.svg);
+                }
+
+            }
+
+            .pensil::after {
+                background: {
+                    color: rgb(25, 212, 202);
+                    image: url(./image/brush.svg);
+                }
+            }
+
+            .camera::after {
+                background: {
+                    color: rgb(255, 167, 16);
+                    image: url(./image/camera.svg);
+                }
+
+
+            }
+
+            .fly::after {
+                background: {
+                    color: rgb(102, 125, 243);
+                    image: url(./image/Shape.svg);
+                }
+
+            }
+
+            h3 {
+                @include font (14px, 700, 'Montserrat');
+                margin: 17px auto;
+
+            }
+
+            p {
+                width: 90%;
+                @include font (14px, 300, 'Roboto');
+                color: rgb(102, 102, 102);
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .meet {
+
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .meet {
+
+                width: 90%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .meeting {
+            width: 90%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .other {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        nav {
+            width: 180px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(255, 78, 80);
+            border-radius: 20px;
+            margin-top: 36px;
+
+
+            a {
+                color: rgb(255, 78, 80);
+                text-decoration: none;
+                @include font (14px, 700, 'Montserrat');
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                width: 279px;
+                height: 39px;
+            }
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 310px 310px 310px;
+        gap: 10px;
+
+        &-image {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-image: url(./image/Sport.png);
+            background-size: cover;
+        }
+
+        &-image:nth-child(2) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-image: url(./image/Healath.png);
+
+        }
+
+        &-image:nth-child(3) {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            background-image: url(./image/Extreme.png);
+
+        }
+
+        &-image:nth-child(4) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-image: url(./image/Games.png);
+
+        }
+
+        &-image:nth-child(5) {
+            grid-column: 2/4;
+            grid-row: 2/3;
+            background-image: url(./image/Culture.png);
+            background-size: cover;
+        }
+
+        &-image:nth-child(6) {
+            grid-column: 1/3;
+            grid-row: 3/4;
+            background-image: url(./image/Culture\ Copy\ \(1\).png);
+
+        }
+
+        &-image:nth-child(7) {
+            grid-column: 3/4;
+            grid-row: 3/4;
+            background-image: url(./image/Games\ Copy.png);
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .grid {
+            display: flex;
+            flex-direction: column;
+
+            &-image {
+                width: 95%;
+                height: 120px;
+                margin: 5px auto;
+                display: flex;
+
+                background: {
+                    image: url(./image/Sport.png);
+                    size: cover;
+                    position: center;
+                }
+
+
+            }
+
+            &-image:nth-child(2) {
+                background-image: url(./image/Healath.png);
+
+            }
+
+            &-image:nth-child(3) {
+                background-image: url(./image/Extreme.png);
+
+            }
+
+            &-image:nth-child(4) {
+                background-image: url(./image/Games.png);
+
+            }
+
+            &-image:nth-child(5) {
+                background-image: url(./image/Culture.png);
+
+            }
+
+            &-image:nth-child(6) {
+                background-image: url(./image/Culture\ Copy\ \(1\).png);
+
+            }
+
+            &-image:nth-child(7) {
+                background-image: url(./image/Games\ Copy.png);
+
+            }
+        }
+
+    }
+
+    .crate {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            p {
+                @include box (90%, 24px, rgb(102, 102, 102));
+                @include font (18px, 300, 'Roboto');
+                text-align: center;
+            }
+
+        }
+
+        .place {
+            justify-content: space-between;
+
+            input {
+                width: 57%;
+                height: 40px;
+            }
+
+            @media screen and (max-width: 768px) {
+                input {
+                    width: 85%;
+                }
+            }
+
+            nav {
+                width: 40%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(255, 78, 80);
+                border-radius: 20px;
+
+                a {
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    @include font (14px, 700, 'Montserrat');
+                    margin-left: 10px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                nav {
+                    width: 85%;
+                    margin-top: 10px;
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .place {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .crate {
+
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .crate {
+            width: 95%;
+        }
+    }
+}
+
+.footing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 95px;
+    border-top: 2px solid rgb(255, 78, 80);
+
+    .foot {
+        width: 25%;
+        margin-top: 39px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            @include font (16px, 400, 'Montserrat');
+            color: rgb(255, 78, 80);
+        }
+
+        h5 {
+            @include font (14px, 700, 'Montserrat');
+            color: rgb(68, 68, 68);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+
+            a {
+                width: 100%;
+                margin: 5px auto;
+                color: rgb(153, 153, 153);
+                text-decoration: none;
+                @include font (14px, 300, 'Roboto');
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-wrap: nowrap;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .foot {
+            width: 95%;
+            align-items: center;
+        }
+    }
+
+}
